@@ -1,4 +1,4 @@
-FROM FROM clojure:openjdk-11-tools-deps-1.11.1.1149-buster AS base
+FROM clojure:openjdk-11-tools-deps-1.11.1.1149-buster AS base
 
 # just to trigger actions
 # Setup GraalVM
