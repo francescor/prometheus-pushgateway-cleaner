@@ -15,7 +15,7 @@
                   :main-opts ["-m" "cognitect.test-runner"]}
            ; Build binary
            :native-image
-           {:main-opts ["-m clj.native-image prometheus-pushgateway-cleaner"
+           {:main-opts ["-m" "clj.native-image" "prometheus-pushgateway-cleaner"
                         "--report-unsupported-elements-at-runtime"
                         "-H:+ReportExceptionStackTraces"
                         "--initialize-at-build-time"
