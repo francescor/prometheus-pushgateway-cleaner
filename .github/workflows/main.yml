@@ -10,7 +10,7 @@ jobs:
       with:
         name: francescor/prometheus-pushgateway-cleaner
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        password: ${{ secrets.GITHUB_TOKEN }}
         buildargs: GIT_REF=${{ github.ref }}
         tag_names: true
         cache: true
