@@ -20,8 +20,8 @@ RUN clojure -Atest
 
 # Build binary
 ARG GIT_REF
-RUN clojure -Anative-image -Dversion=$(echo $GIT_REF | cut -d/ -f3-)
-
+# RUN clojure -Anative-image -Dversion=$(echo $GIT_REF | cut -d/ -f3-)
+RUN clojure -Anative-image -Dversion=myversion
 
 # Create minimal image
 FROM busybox:1.31.1-glibc
